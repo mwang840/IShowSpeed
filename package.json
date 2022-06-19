@@ -1,0 +1,23 @@
+{
+  "name": "ishowspeed",
+  "version": "1.0.0",
+  "description": "A bot influenced by IshowSpeed",
+  "main": "speed.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mwang840/IShowSpeed.git"
+  },
+  "author": "\"\"",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mwang840/IShowSpeed/issues"
+  },
+  "homepage": "https://github.com/mwang840/IShowSpeed#readme",
+  "dependencies": {
+    "discord.js": "^13.8.0",
+    "dotenv": "^16.0.1"
+  }
+}

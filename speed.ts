@@ -8,3 +8,17 @@ const client = new DiscordJs.Client({
         Intents.FLAGS.GUILD_MESSAGES
     ]
 })
+
+client.on('ready', () => {
+    console.log('Speed is ready');
+})
+
+client.on('messageCreate', (message)=>{
+    if(message.content === 'ping'){
+        message.reply({
+            content: 'pong',
+        })
+    }
+})
+
+client.login(process.env.TOKEN)

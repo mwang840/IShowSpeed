@@ -10,7 +10,10 @@ const client = new DiscordJs.Client({
 })
 
 client.on('ready', () => {
-    console.log('Speed is ready');
+    console.log('GOD IS GOOD GOD IS GREAT GOD IS GOOD EHYYYYYYYYYYYYYYYYYYYYYYYYY');
+    //guild commands only
+    const guildID = '988560441200476261'
+    const guild = client.guilds.cache.get(guildID)
 })
 
 client.on('messageCreate', (message)=>{

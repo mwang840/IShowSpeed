@@ -10,7 +10,10 @@ var client = new discord_js_1["default"].Client({
     ]
 });
 client.on('ready', function () {
-    console.log('Speed is ready');
+    console.log('GOD IS GOOD GOD IS GREAT GOD IS GOOD EHYYYYYYYYYYYYYYYYYYYYYYYYY');
+    //guild commands only
+    var guildID = '988560441200476261';
+    var guild = client.guilds.cache.get(guildID);
 });
 client.on('messageCreate', function (message) {
     if (message.content === 'ping') {

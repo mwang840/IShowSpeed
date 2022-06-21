@@ -1,4 +1,4 @@
-import DiscordJs, { Intents } from 'discord.js'
+import DiscordJs, { CommandInteractionOptionResolver, Intents } from 'discord.js'
 import dotenv from 'dotenv'
 dotenv.config()
 
@@ -14,13 +14,29 @@ client.on('ready', () => {
     //guild commands only
     const guildID = '988560441200476261'
     const guild = client.guilds.cache.get(guildID)
+    let commands
+
+    if(guild){
+        commands = guild.commands
+    }
+    else{
+        commands = client.application?.commands
+    }
+
+    commands?.create({
+        name:'ping',
+        description: 'Replies with Pong'
+    })
 })
 
-client.on('messageCreate', (message)=>{
-    if(message.content === 'ping'){
-        message.reply({
-            content: 'pong',
-        })
+client.on('interactionCreate', async(interaction)=>{
+    if(!interaction.isCommand()){
+        return
+    }
+
+    const {commandName, options} = interaction
+    if(commandName === 'ping'){
+        content: 'pong'
     }
 })
 

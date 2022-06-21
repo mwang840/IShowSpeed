@@ -25,7 +25,25 @@ client.on('ready', () => {
 
     commands?.create({
         name:'ping',
-        description: 'Replies with Pong'
+        description: 'Replies with Pong.',
+    })
+
+    commands?.create({
+        name: 'add',
+        description: 'Adds two integers',
+        options: [{
+            name: 'Num1',
+            description: 'First number to be added',
+            required: true,
+            type: DiscordJs.Constants.ApplicationCommandOptionTypes.INTEGER
+        },
+        {
+            name: 'Num2',
+            description: 'Second number to be added',
+            required: true,
+            type: DiscordJs.Constants.ApplicationCommandOptionTypes.INTEGER
+        }
+        ]
     })
 })
 
@@ -36,7 +54,14 @@ client.on('interactionCreate', async(interaction)=>{
 
     const {commandName, options} = interaction
     if(commandName === 'ping'){
-        content: 'pong'
+        interaction.reply({content: 'pong'})
+    }
+    else if(commandName === 'add'){
+        const num1 = options.getNumber('Num1')!
+        const num2 = options.getNumber('Num2')!
+        interaction.reply({
+            content: `Total sum is ${num1 + num2}`
+        })
     }
 })
 

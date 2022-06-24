@@ -1,4 +1,4 @@
-import DiscordJs, { CommandInteractionOptionResolver, Intents } from 'discord.js'
+import DiscordJs, { CommandInteractionOptionResolver, Intents, ApplicationCommandOptionType } from 'discord.js'
 import dotenv from 'dotenv'
 dotenv.config()
 
@@ -32,16 +32,16 @@ client.on('ready', () => {
         name: 'add',
         description: 'Adds two integers',
         options: [{
-            name: 'Num1',
+            name: 'num1',
             description: 'First number to be added',
             required: true,
-            type: DiscordJs.Constants.ApplicationCommandOptionTypes.INTEGER
+            type: DiscordJs.Constants.ApplicationCommandOptionTypes.NUMBER
         },
         {
-            name: 'Num2',
+            name: 'num2',
             description: 'Second number to be added',
             required: true,
-            type: DiscordJs.Constants.ApplicationCommandOptionTypes.INTEGER
+            type: DiscordJs.Constants.ApplicationCommandOptionTypes.NUMBER
         }
         ]
     })
@@ -57,8 +57,8 @@ client.on('interactionCreate', async(interaction)=>{
         interaction.reply({content: 'pong'})
     }
     else if(commandName === 'add'){
-        const num1 = options.getNumber('Num1')!
-        const num2 = options.getNumber('Num2')!
+        const num1 = options.getNumber('num1')!
+        const num2 = options.getNumber('num2')!
         interaction.reply({
             content: `Total sum is ${num1 + num2}`
         })

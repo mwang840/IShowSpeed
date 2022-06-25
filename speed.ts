@@ -3,6 +3,7 @@ import WOKCommands from 'wokcommands'
 import path from 'path'
 import mongoose from "mongoose"
 import dotenv from 'dotenv'
+import testSchema from './test-scheme'
 dotenv.config()
 
 const client = new DiscordJs.Client({
@@ -23,9 +24,13 @@ client.on('ready', async () => {
         commandDir: path.join(__dirname, 'commands'),
         typeScript: true,
         testServers: ['988560441200476261'],
-        mongoUri: process.env.MONGO_URI
+        mongoUri:  process.env.MONGO_URI
     })
-
+    setTimeout(async ()=>{
+        await new testSchema({
+            message: 'hello there'
+        }).save()
+    }, 1000)
 })
 
 client.login(process.env.TOKEN)

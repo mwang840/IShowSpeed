@@ -1,6 +1,7 @@
 import DiscordJs, { CommandInteractionOptionResolver, Intents, ApplicationCommandOptionType } from 'discord.js'
 import WOKCommands from 'wokcommands'
 import path from 'path'
+import mongoose from "mongoose"
 import dotenv from 'dotenv'
 dotenv.config()
 
@@ -11,7 +12,12 @@ const client = new DiscordJs.Client({
     ]
 })
 
-client.on('ready', () => {
+client.on('ready', async () => {
+    await mongoose.connect(process.env.MONGO_URI || '', {
+        keepAlive: true
+    })
+    
+    
     console.log('GOD IS GOOD GOD IS GREAT GOD IS GOOD EHYYYYYYYYYYYYYYYYYYYYYYYYY');
     new WOKCommands(client, {
         commandDir: path.join(__dirname, 'commands'),

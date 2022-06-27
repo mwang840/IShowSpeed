@@ -2,6 +2,8 @@
 
 A discord bot that takes up the prescence of IShowSpeed and wraps around discords api (also will implement the behavior of IShowSpeed during streams)
 
+Written in Typeascript and is run via node
+
 <h1>Setup</h1>
 -Node.js (v12 or higher)
 

@@ -18,6 +18,7 @@ A discord bot that takes up the prescence of IShowSpeed and wraps around discord
 <h1>Running IShowSpeed</h1>
 -Clone this repository on your pc and make a .env for the bot token that you are going to make
 
+
 -Make sure Node.js is installed and configured to your path (node -v/npm -v checks it)
 
 -Set up mongoDB, which IShowSpeed uses (https://www.mongodb.com/)

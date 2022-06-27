@@ -28,6 +28,8 @@ Written in Typeascript and is run via node
 
 -Set up mongoDB, which IShowSpeed uses (https://www.mongodb.com/)
 
+-Change the testServers in speed.ts and replace it with the id of your server
+
 -Run ***npm run dev***  which puts the bot online and enables the slash commands
 
 -Have fun!!

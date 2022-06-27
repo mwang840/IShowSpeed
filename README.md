@@ -4,17 +4,26 @@ A discord bot that takes up the prescence of IShowSpeed and wraps around discord
 
 <h1>Setup</h1>
 -Node.js (v12 or higher)
+
 -Discord application/account (desktop app or discords website)
+
 -Any IDE is fine (Visual Studio Code prefered)
+
 -Install Typescript globally (npm install -g typescript)
+
 -Install Discord.js library (npm install discord.js)
+
 -Github set up (needed to clone the repository and access IShowSpeed)
 
 <h1>Running IShowSpeed</h1>
 -Clone this repository on your pc and make a .env for the bot token that you are going to make
+
 -Make sure Node.js is installed and configured to your path (node -v/npm -v checks it)
+
 -Set up mongoDB, which IShowSpeed uses (https://www.mongodb.com/)
--Run npm run dev which puts the bot online and enables the slash commands
+
+-Run npm run dev  which puts the bot online and enables the slash commands
+
 -Have fun!!
 
 
@@ -30,6 +39,7 @@ A discord bot that takes up the prescence of IShowSpeed and wraps around discord
 
 <h1>Feedback</h1>
 -If there are any issues, feel free to leave them in the issues section under its repository
+
 -If you want to colloborate, fork the repo or request to be added to the repo and make a seperate branch to include your collaborations (git checkout -b branchName)
 
-<h2>This bot is created by Maxwell Wang and is managed by Maxwell Wang and Cameron Thacker</h2>
+<p2>This bot is created by Maxwell Wang and is managed by Maxwell Wang and Cameron Thacker</p2>

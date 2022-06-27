@@ -31,3 +31,5 @@ A discord bot that takes up the prescence of IShowSpeed and wraps around discord
 <h1>Feedback</h1>
 -If there are any issues, feel free to leave them in the issues section under its repository
 -If you want to colloborate, fork the repo or request to be added to the repo and make a seperate branch to include your collaborations (git checkout -b branchName)
+
+<h2>This bot is created by Maxwell Wang and is managed by Maxwell Wang and Cameron Thacker</h2>

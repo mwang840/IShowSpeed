@@ -46,4 +46,4 @@ A discord bot that takes up the prescence of IShowSpeed and wraps around discord
 
 -If you want to colloborate, fork the repo or request to be added to the repo and make a seperate branch to include your collaborations (git checkout -b branchName)
 
-<p2>This bot is created by Maxwell Wang and is managed by Maxwell Wang and Cameron Thacker</p2>
+<p2>This bot is created by Maxwell Wang and is managed by Maxwell Wang, Cameron Thacker and Christopher Bennett</p2>

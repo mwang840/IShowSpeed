@@ -5,6 +5,7 @@ A discord bot that takes up the prescence of IShowSpeed and wraps around discord
 <h1>Setup</h1>
 -Node.js (v12 or higher)
 
+
 -Discord application/account (desktop app or discords website)
 
 -Any IDE is fine (Visual Studio Code prefered)
@@ -12,6 +13,8 @@ A discord bot that takes up the prescence of IShowSpeed and wraps around discord
 -Install Typescript globally (npm install -g typescript)
 
 -Install Discord.js library (npm install discord.js)
+
+-Check to see if your are up to date with the current packages (if not do npm i to keep up to date)
 
 -Github set up (needed to clone the repository and access IShowSpeed)
 

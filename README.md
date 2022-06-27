@@ -26,7 +26,7 @@ A discord bot that takes up the prescence of IShowSpeed and wraps around discord
 
 -Set up mongoDB, which IShowSpeed uses (https://www.mongodb.com/)
 
--Run npm run dev  which puts the bot online and enables the slash commands
+-Run ***npm run dev***  which puts the bot online and enables the slash commands
 
 -Have fun!!
 

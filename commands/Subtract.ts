@@ -9,13 +9,13 @@ export default{
     options: [
         {
             name: 'first_number',
-            description: 'This is the first number being added',
+            description: 'This is the first number being subtracted',
             type: 'NUMBER',
             required: true
         },
         {
             name: 'second_number',
-            description: 'The second number being added',
+            description: 'The second number being subtracted',
             type: 'NUMBER',
             required: true
         }
@@ -25,6 +25,6 @@ export default{
         const number1 = interaction.options.getNumber('first_number') || 0
         const number2 = interaction.options.getNumber('second_number') || 0
         console.log(number1 - number2)
-        return `IShowSpeed added ***${number1}*** and ***${number2}*** and got ${number1 - number2}`
+        return `IShowSpeed subtracted ***${number1}*** and ***${number2}*** and got ${number1 - number2}`
     }
 } as ICommand

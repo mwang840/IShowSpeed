@@ -1,3 +1,4 @@
+import { MessageActionRow, MessageButton } from "discord.js";
 import { ICommand } from "wokcommands";
 
 export default{
@@ -6,5 +7,9 @@ export default{
     slash: 'both',
     testOnly: true,
 
-    callback: async({interaction: msg})=>{}
+    callback: async({interaction: msg})=>{
+        const row = new MessageActionRow().addComponents(
+            new MessageButton().setCustomId('Smile').setEmoji('Smile').setLabel('Confirm?').setStyle('PRIMARY')
+        )
+    }
 } as ICommand

@@ -50,8 +50,10 @@ Written in Typeascript and is run via node
 
 
 <h1>Feedback</h1>
--If there are any issues, feel free to leave them in the issues section under its repository
+-If there are any bugs/issues, feel free to leave them in the issues section under its repository
+
 
 -If you want to colloborate, fork the repo or request to be added to the repo and make a seperate branch to include your collaborations (git checkout -b branchName)
+
 
 <p2>This bot is created by Maxwell Wang and is managed by Maxwell Wang, Cameron Thacker and Christopher Bennett</p2>

@@ -7,9 +7,16 @@ export default{
     slash: 'both',
     testOnly: true,
 
-    callback: async({interaction: msg})=>{
+    callback: async({interaction: msgInt, channel})=>{
         const row = new MessageActionRow().addComponents(
-            new MessageButton().setCustomId('Smile').setEmoji('Smile').setLabel('Confirm?').setStyle('PRIMARY')
+            new MessageButton().setCustomId('Smile').setEmoji('😊').setLabel('Confirm?').setStyle('SUCCESS')
+        ).addComponents(
+            new MessageButton().setCustomId('Frown').setEmoji('😒').setLabel('Confirm?').setStyle('SUCCESS')
         )
+
+        await msgInt.reply({
+            content: 'Final decision',
+            components: [row]
+        })
     }
 } as ICommand

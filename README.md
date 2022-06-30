@@ -47,6 +47,7 @@ Written in Typeascript and is run via node
 - [X] Adding, takes the sum of two numbers
 - [X] Subtract, takes the difference of two numbers
 - [X] Multiplying, takes the product of two numbers
+- [X] SpeedTest (name will be changed) able to access IShowSpeeds main youtube channel
 
 
 <h1>Feedback</h1>

@@ -11,12 +11,16 @@ export default{
         const row = new MessageActionRow().addComponents(
             new MessageButton().setCustomId('Smile').setEmoji('😊').setLabel('Confirm?').setStyle('SUCCESS')
         ).addComponents(
-            new MessageButton().setCustomId('Frown').setEmoji('😒').setLabel('Confirm?').setStyle('SUCCESS')
+            new MessageButton().setCustomId('Frown').setEmoji('😒').setLabel('Confirm?').setStyle('DANGER')
+        )
+
+        const speedYt = new MessageActionRow().addComponents(
+            new MessageButton().setURL('https://www.youtube.com/c/IShowSpeed').setLabel('See speed?').setStyle("LINK")
         )
 
         await msgInt.reply({
             content: 'Final decision',
-            components: [row]
+            components: [row, speedYt]
         })
     }
 } as ICommand

@@ -9,5 +9,6 @@ export default {
 
     callback : async({message, text })=>{
         const speedEmbed = new MessageEmbed().setDescription('Its Speed talking').setTitle('Speed').setColor('BLUE')
+        return speedEmbed
     }
 } as ICommand

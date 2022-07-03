@@ -1,4 +1,4 @@
-import { MessageActionRow, MessageButton } from "discord.js";
+import { ButtonInteraction, MessageActionRow, MessageButton } from "discord.js";
 import { ICommand } from "wokcommands";
 
 export default{
@@ -21,6 +21,16 @@ export default{
         await msgInt.reply({
             content: 'Final decision',
             components: [row, speedYt]
+        })
+
+        const filter = (btnInt: ButtonInteraction) => {
+            return msgInt.user.id === btnInt.user.id
+        }
+
+        const receivedMessage = channel.createMessageComponentCollector({
+            filter,
+            max: 1,
+            time: 1000
         })
     }
 } as ICommand

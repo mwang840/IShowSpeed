@@ -1,4 +1,5 @@
 import { ButtonInteraction, MessageActionRow, MessageButton } from "discord.js";
+import { Collection } from "mongoose";
 import { ICommand } from "wokcommands";
 
 export default{
@@ -23,14 +24,34 @@ export default{
             components: [row, speedYt]
         })
 
-        const filter = (btnInt: ButtonInteraction) => {
-            return msgInt.user.id === btnInt.user.id
+        const filter = (btnInter: ButtonInteraction) => {
+            return msgInt.user.id === btnInter.user.id
         }
-
-        const receivedMessage = channel.createMessageComponentCollector({
-            filter,
+        //Button is clicked
+        const collector = channel.createMessageComponentCollector({
+            filter: filter.arguments,
             max: 1,
-            time: 1000
+            time: 1000 * 10
+        })
+        //Waits for a collection
+        collector.on('collect', (i: ButtonInteraction)=>{
+            i.reply({
+                content: 'This button is clicked'
+            })
+        })
+        //Collection is received
+        collector.on('end', async (collection)=>{
+            collection.forEach((click)=>{
+                console.log(click.user.id, click.customId)
+            })
+            if(collection.first()?.customId === 'smile'){
+                //smile
+            }
+        })
+
+        await msgInt.editReply({
+            content: 'Speed has taken action',
+            components: []
         })
     }
 } as ICommand

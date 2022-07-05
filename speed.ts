@@ -23,7 +23,7 @@ client.on('ready', async () => {
     new WOKCommands(client, {
         commandDir: path.join(__dirname, 'commands'),
         typeScript: true,
-        testServers: ['988560441200476261'],
+        testServers: ['988560441200476261', '807039720269021204'],
         mongoUri:  process.env.MONGO_URI
     })
     setTimeout(async ()=>{

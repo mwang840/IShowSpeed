@@ -2,7 +2,7 @@ import { ButtonInteraction, MessageActionRow, MessageButton } from "discord.js";
 import { Collection } from "mongoose";
 import { ICommand } from "wokcommands";
 
-export default{
+export default {
     category: 'Testing IShowSpeeds patience',
     description: 'Testing IShowSpeeds patience',
     slash: 'both',
@@ -44,8 +44,8 @@ export default{
             collection.forEach((click)=>{
                 console.log(click.user.id, click.customId)
             })
-            if(collection.first()?.customId === 'smile'){
-                //smile
+            if(collection.first()?.customId === 'Smile'){
+                //await for response
             }
         })
 

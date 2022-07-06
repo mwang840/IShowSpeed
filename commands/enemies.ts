@@ -41,7 +41,7 @@ export default {
                 console.log(click.user.id, click.customId)
             })
             if(collection.first()?.customId === 'Cupcake'){
-                await msgInit.editReply({
+                await msgInit.reply({
                     files:[
                         {
                             attachment: `${__dirname}}../../../../../Assets/enemies/thePredator.jpg`,
@@ -51,7 +51,7 @@ export default {
                 })
             }
             else if(collection.first()?.customId === 'Goofy_Ahh'){
-                await msgInit.editReply({
+                await msgInit.reply({
                     files:[
                         {
                             attachment: `${__dirname}}../../../../../Assets/enemies/quandale.jpg`,
@@ -61,7 +61,7 @@ export default {
                 })
             }
             else if(collection.first()?.customId === 'Messi'){
-                await msgInit.editReply({
+                await msgInit.reply({
                     files:[
                         {
                             attachment: `${__dirname}}../../../../../Assets/enemies/talkingBen.jpg`,

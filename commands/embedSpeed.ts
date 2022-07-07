@@ -8,8 +8,7 @@ export default {
     permissions:['ADMINISTRATOR'],
 
     callback : async({message, text })=>{
-        const theJson = JSON.parse(text)
-        const theEmbed = new MessageEmbed(theJson)
-        return theEmbed
+        const speedEmbed = new MessageEmbed().setDescription('Its Speed talking').setTitle('Speed').setColor('BLUE')
+        return speedEmbed
     }
 } as ICommand

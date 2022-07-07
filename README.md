@@ -30,7 +30,7 @@ Written in Typeascript and is run via node
 
 -Set up mongoDB, which IShowSpeed uses (https://www.mongodb.com/)
 
--Change the testServers in speed.ts and replace it with the id of your server
+-Change the testServers in <b>speed.ts</b> and replace it with the id of your server
 
 -Place the mongo db password uri under the .env file MONGO_URI = mongo uri with your servers password goes here
 
@@ -39,7 +39,7 @@ Written in Typeascript and is run via node
 -Have fun!!
 
 
-<h1>Current Commands</h1>
+<h1>Current Commands (slash)</h1>
 
 - [X] Ping, sends a ping to the bot and replies with a pong
 - [X] Siuuuu, Speed replies with SIUUUU
@@ -47,6 +47,8 @@ Written in Typeascript and is run via node
 - [X] Adding, takes the sum of two numbers
 - [X] Subtract, takes the difference of two numbers
 - [X] Multiplying, takes the product of two numbers
+- [X] SpeedTest (name will be changed) able to access IShowSpeeds main youtube channel
+- [X] EmbedSpeed returns an embed (testing if embeds work)
 
 
 <h1>Feedback</h1>

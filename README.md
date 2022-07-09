@@ -20,7 +20,7 @@ Written in Typeascript and is run via node
 
 -Github set up (needed to clone the repository and access IShowSpeed)
 
--Make a .env file and place your discords bot token here TOKEN = token name goes here
+-Edit the existing config.env file and place your discords bot token here TOKEN = token name goes here
 
 <h1>Running IShowSpeed</h1>
 -Clone this repository on your pc and edit the config.env for the bot token that you are going to make

@@ -30,9 +30,11 @@ Written in Typeascript and is run via node
 
 -Set up mongoDB, which IShowSpeed uses (https://www.mongodb.com/)
 
--Change the testServers in <b>speed.ts</b> and replace it with the id of your server
+-Change the testServers id in <b>config.env</b> and replace it with the id of your server
 
 -Place the mongo db password uri under the config.env file
+
+-Rename config.env to .env
 
 -Run ***npm run dev***  which puts the bot online and enables the slash commands
 

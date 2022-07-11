@@ -20,7 +20,7 @@ Written in Typeascript and is run via node
 
 -Github set up (needed to clone the repository and access IShowSpeed)
 
--Edit the existing config.env file and place your discords bot token here TOKEN = token name goes here
+-Edit the existing config.env file and the config-example.json (which you can place your discord server token here) and place your discords bot token here TOKEN = token name goes here
 
 <h1>Running IShowSpeed</h1>
 -Clone this repository on your pc and edit the config.env for the bot token that you are going to make
@@ -34,7 +34,7 @@ Written in Typeascript and is run via node
 
 -Place the mongo db password uri under the config.env file
 
--Rename config.env to .env
+-Rename config.env to .env and the config-example.json to config.json
 
 -Run ***npm run dev***  which puts the bot online and enables the slash commands
 

@@ -1,3 +1,6 @@
+#server stuff
+config.json
+
 # Logs
 logs
 *.log

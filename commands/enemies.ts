@@ -65,7 +65,7 @@ export default {
                     files:[
                         {
                             attachment: `${__dirname}}../../../../../Assets/enemies/talkingBen.jpg`,
-                            name: 'talkingBen.jpg'
+                            name: 'talkingBen.png'
                         }
                     ]
                 })

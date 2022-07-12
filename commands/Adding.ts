@@ -24,7 +24,6 @@ export default{
     callback: ({message, interaction}) => {
         const number1 = interaction.options.getNumber('first_number') || 0
         const number2 = interaction.options.getNumber('second_number') || 0
-        console.log(number1+number2)
         return `IShowSpeed added ***${number1}*** and ***${number2}*** and got ${number1 + number2}`
     }
 } as ICommand

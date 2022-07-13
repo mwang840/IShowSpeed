@@ -11,7 +11,7 @@
     "type": "git",
     "url": "git+https://github.com/mwang840/IShowSpeed.git"
   },
-  "author": "Maxwell Wang, Cameron Thacker and Chris Bennett",
+  "author": "Maxwell Wang",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/mwang840/IShowSpeed/issues"

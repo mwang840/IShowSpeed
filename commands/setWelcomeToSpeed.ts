@@ -30,5 +30,9 @@ export default{
             return 'Use this command within this server! Thank you!'
         }
         const targeted = message ? message.mentions.channels.first() : interaction.options.getChannel('channel')
+
+        if(!targeted || targeted.type == 'GUILD_TEXT'){
+            return 'Specify channel please'
+        }
     }
 } as ICommand

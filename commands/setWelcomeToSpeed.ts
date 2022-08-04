@@ -32,6 +32,9 @@ export default{
         }
         const targeted = message ? message.mentions.channels.first() : interaction.options.getChannel('channel')
 
+        if(!targeted){
+
+        }
         if(!targeted || targeted.type == 'GUILD_TEXT'){
             return 'Specify channel please'
         }
@@ -53,5 +56,6 @@ export default{
             upsert: true
         })
         return 'Welcome channel set!'
+
     }
 } as ICommand

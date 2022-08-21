@@ -1,6 +1,6 @@
 # IShowSpeed
 
-A discord bot that takes up the prescence of IShowSpeed and wraps around discords api (also will implement the behavior of IShowSpeed during streams)
+A discord bot that is able to work on basic calculus formulas. This bot was a learning experience for me and could say my first time making a discord bot and learning from the wok tutorial himself via youtube.
 
 Written in Typeascript and is run via node
 

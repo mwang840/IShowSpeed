@@ -61,7 +61,7 @@ client.on('ready', function () { return __awaiter(void 0, void 0, void 0, functi
                 new wokcommands_1["default"](client, {
                     commandDir: path_1["default"].join(__dirname, 'commands'),
                     typeScript: true,
-                    testServers: ['988560441200476261', '807039720269021204'],
+                    testServers: [],
                     mongoUri: process.env.MONGO_URI
                 });
                 setTimeout(function () { return __awaiter(void 0, void 0, void 0, function () {

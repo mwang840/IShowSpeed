@@ -53,6 +53,7 @@ Written in Typeascript and is run via node
 - [X] SquareRoot takes a square root of a number
 - [X] Dividing, takes the dividend of two numbers (Note having the second number as zero will default to NaN)
 - [X] Quadratic, finds the root of a given quadratic equation (if it does not find it, it will default to NaN)
+- [X] Derivative, finds the derivative of a given quadratic equation (zero if the input is a constant)
 
 <h1>Feedback</h1>
 -If there are any bugs/issues, feel free to leave them in the issues section under its repository

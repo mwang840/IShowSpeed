@@ -50,10 +50,11 @@ Written in Typeascript and is run via node
 - [X] Subtract, takes the difference of two numbers
 - [X] Multiplying, takes the product of two numbers
 - [X] SpeedTest (name will be changed) able to access IShowSpeeds main youtube channel
-- [X] EmbedSpeed returns an basic embed (testing if embeds work)
+- [X] SquareRoot takes a square root of a number
 - [X] Dividing, takes the dividend of two numbers (Note having the second number as zero will default to NaN)
+- [X] Quadratic, finds the root of a given quadratic equation (if it does not find it, it will default to NaN)
 
 <h1>Feedback</h1>
 -If there are any bugs/issues, feel free to leave them in the issues section under its repository
 
-<p2>This bot is created by Maxwell Wang and is managed by Maxwell Wang, Cameron Thacker and Christopher Bennett</p2>
+<p2>This bot is created by Maxwell Wang and is managed by Maxwell Wang</p2>

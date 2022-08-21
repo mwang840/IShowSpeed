@@ -18,7 +18,7 @@
   },
   "homepage": "https://github.com/mwang840/IShowSpeed#readme",
   "dependencies": {
-    "discord.js": "14.0",
+    "discord.js": "14.2",
     "dotenv": "^16.0.1",
     "mathjs": "^11.0.1",
     "mongoose": "^6.4.0",

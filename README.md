@@ -1,5 +1,5 @@
 # IShowSpeed
- ![License](https://img.shields.io/github/license/mwang840/IShowSpeed) ![TotalFiles](https://img.shields.io/github/directory-file-count/mwang840/IShowSpeed)
+ ![License](https://img.shields.io/github/license/mwang840/IShowSpeed) ![TotalFiles](https://img.shields.io/github/directory-file-count/mwang840/IShowSpeed) ![Total Size](https://img.shields.io/github/repo-size/mwang840/IShowSpeed) ![Lines of Code](https://img.shields.io/tokei/lines/github/mwang840/IShowSpeed) ![Total Languages](https://img.shields.io/github/languages/count/mwang840/IShowSpeed)
 
 A discord bot that is able to work on basic calculus formulas. This bot was a learning experience for me and could say my first time making a discord bot and learning from the wok tutorial himself via youtube.
 
